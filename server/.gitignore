@@ -1,0 +1,7 @@
+# Ignore dependencies in any folder
+node_modules/
+
+# Ignore env files in any folder
+.env
+server/.env
+client/.env
