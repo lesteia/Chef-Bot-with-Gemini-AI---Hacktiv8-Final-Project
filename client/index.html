@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ry Chef Bot - Chefbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h1>Ry Chef Bot</h1>
+            <p>Your Chef AI Assistant - Ask us anything!</p>
+        </div>
+
+        <div class="chatbot-messages" id="messagesContainer">
+            <div class="message ai">
+                <div class="message-bubble">
+                    Welcome to Ry Chef Bot! 👋 What should we make today?
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbot-input-area">
+            <input 
+                type="text" 
+                class="chatbot-input" 
+                id="userInput" 
+                placeholder="Type your question here..."
+                autocomplete="off"
+            >
+            <input 
+                type="file" 
+                id="imageInput" 
+                accept="image/*" 
+                style="display:none;"
+            >
+            <button class="image-button" id="imageButton" title="Attach image">Upload Image</button>
+            <button class="send-button" id="sendButton">Send</button>
+        </div>
+        <div id="loadingSpinner" class="loading" style="display:none;">
+            <span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
